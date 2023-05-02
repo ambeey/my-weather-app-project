@@ -1,0 +1,39 @@
+body {
+  display: block;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+input {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: auto;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+.card {
+  box-shadow: 0 1px 3px rgb(32 33 36 / 28%);
+}
+.sunHeader {
+  color: rgba(240, 198, 10, 0.849);
+  font-size: 100px;
+}
+.sun {
+  color: rgba(240, 198, 10, 0.849);
+  font-size: 40px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  box-shadow: 0 1px 1px grey;
+  transition: all 200ms ease;
+  opacity: 0.8;
+}
+button:hover {
+  color: aliceblue;
+  background-color: rgb(148, 148, 196);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}

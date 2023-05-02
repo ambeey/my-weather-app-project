@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/362e0881bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <input
+            type="text"
+            id="location"
+            class="form-control"
+            placeholder="Search for city or town near you"
+          />
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-8">
+          <h2>Thursday</h2>
+          <br />
+          <h5 id="full-date">Feb 23</h5>
+          <h6 id="time">14:25</h6>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 11rem">
+            <div class="card-body">
+              <h4 class="card-title">Pretoria</h4>
+              <h6 class="card-subtitle mb-2 text-muted" id="temperature">
+                26<a href="#">°C</a>
+              </h6>
+              <p class="card-text">Sunny</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <i class="fa-sharp fa-solid fa-sun sunHeader"></i>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-primary" disabled>
+        set as favorite city
+      </button>
+      <hr />
+      <div class="row">
+        <div class="col">
+          feels like
+          <br />
+          23°C
+        </div>
+        <div class="col">
+          humidity
+          <br />
+          46%
+        </div>
+        <div class="col">
+          chances of rain
+          <br />
+          30%
+        </div>
+        <div class="col">
+          wind speed
+          <br />
+          8km/h
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col">
+          fri
+          <br />
+          <i class="fa-sharp fa-solid fa-sun sun"></i>
+          <br />
+          29°|16°
+        </div>
+        <div class="col">
+          sat
+          <br />
+          <i class="fa-sharp fa-solid fa-sun sun"></i>
+          <br />
+          31°|16°
+        </div>
+        <div class="col">
+          sun
+          <br />
+          <i class="fa-sharp fa-solid fa-sun sun"></i>
+          <br />
+          28°|16°
+        </div>
+        <div class="col">
+          mon
+          <br />
+          <i class="fa-sharp fa-solid fa-sun sun"></i>
+          <br />
+          28°|16°
+        </div>
+        <div class="col">
+          tue
+          <br />
+          <i class="fa-sharp fa-solid fa-sun sun"></i>
+          <br />
+          27°|16°
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
