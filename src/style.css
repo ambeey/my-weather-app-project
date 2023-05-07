@@ -1,39 +1,28 @@
-body {
-  display: block;
-  margin: auto;
-  font-family: "Roboto", sans-serif;
-}
-input {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  padding: auto;
-  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-}
-.card {
-  box-shadow: 0 1px 3px rgb(32 33 36 / 28%);
-}
-.sunHeader {
-  color: rgba(240, 198, 10, 0.849);
-  font-size: 100px;
-}
-.sun {
-  color: rgba(240, 198, 10, 0.849);
-  font-size: 40px;
+.weather-app {
+max-width: 600px;
+margin:30;
+padding: 20px;
+border-radius: 5px;
+border: 1px solid #dadde1;
 }
 
-button {
-  display: block;
+h1{
+  color: #878787;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
 
-  box-shadow: 0 1px 1px grey;
-  transition: all 200ms ease;
-  opacity: 0.4;
-}
-button:hover {
-  color: aliceblue;
-  background-color: rgb(148, 148, 196);
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-  color: blueviolet;
+li{
+  list-style: none;
+  color: #878787;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
 }

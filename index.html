@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather app</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,6 +26,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app">
       <form>
         <div>
           <input
@@ -36,58 +37,42 @@
           />
         </div>
       </form>
+      <h1>
+        Pretoria
+      </h1>
+      <ul>
+        <li> friday 05:00
+      <li>
+        clear
+      </li>
+    </ul>
       <div class="row">
-        <div class="col-8">
-          <h2>Thursday</h2>
-          <br />
-          <h5 id="full-date">Feb 23</h5>
-          <h6 id="time">14:25</h6>
+        <div class="col-6">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy"/>
+          12 °C|°F
         </div>
-        <div class="col-2">
-          <div class="card" style="width: 11rem;">
-            <div class="card-body">
-              <h4 class="card-title">Pretoria</h4>
-              <h6 class="card-subtitle mb-2 text-muted" id="temperature">
-                26<a href="#">°C</a>
-              </h6>
-              <p class="card-text" id="condition">Sunny</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-1">
-          <i class="fa-sharp fa-solid fa-sun sunHeader"></i>
-        </div>
+       <div class="col-6">
+      <ul>
+        <li>
+          Precipitation : 0%
+        </li>
+        <li>
+          Humudity : 50%
+        </li>
+        <li>
+          wind :2 km/h
+        </li>
+      </ul>  
       </div>
-      <button type="button" >
-        current
-      </button>
-      <hr />
-      <div class="row">
-        <div class="col" >
-          feels like
-          <br />
-          <p id="feels-like">10 C</p>
-        
-        </div>
-        <div class="col" >
-          humidity
-          <br />
-          <p id="humidity">45%</p>
-          
-          
-        </div>
-        <div class="col" >
-          wind speed
-          <br />
-          <p id="wind-speed"> 8km/h</p>
-         
-        </div>
       </div>
+    <small>
       <a href="https://github.com/ambeey/my-weather-app-project"
          target="_blank">
           open-source code</a>
 by Thia Sigebe
-    
+</small>
+  </div>
+   </div>
     <script src="src/script.js"></script>
   </body>
 </html>
