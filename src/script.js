@@ -45,17 +45,14 @@ function search(event) {
     let conditionsElement = document.querySelector("#condition");
     conditionsElement.innerHTML = `${conditions}`;
 
-    let precipitations = response.data.weather[0].description;
-    let precipitationsElement = document.querySelector("#precepitation");
-    precipitationsElement.innerHTML = `${precipitations}%`;
 
     let humidities = response.data.main.humidity;
     let humiditiesElement = document.querySelector("#humidity");
     humiditiesElement.innerHTML = `${humidities}%`;
 
     let speed = response.data.wind.speed;
-    let speedElement = document.querySelector("#speed");
-    speedElement.innerHTML = `${speed}Km/h`;
+    let speedElement = document.querySelector("#wind-speed");
+    speedElement.innerHTML = `${speed}km/h`;
   }
   axios.get(apiUrl).then(showTemp);
 }
