@@ -62,9 +62,20 @@ function search(event) {
     iconElement.setAttribute("alt", response.data.weather[0],description);
  
   }
-
   
   axios.get(apiUrl).then(showTemp);
 }
+function displayImperialTemp(event) {
+  event.preventDefault();
+  alert("i work");
+  let tempElement = document.querySelector("#temperature");
+  let imperialTemp = (14 * 9) /5 + 32;
+  tempElement.innerHTML = Math.round(imperialTemp);
+}
+
+
 let form = document.querySelector("form");
 form.addEventListener("submit", search);
+
+let imperialLink = document.querySelector("#imperial");
+imperialLink.addEventListener("click",displayImperialTemp);
