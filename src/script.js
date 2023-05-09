@@ -67,9 +67,8 @@ function search(event) {
 }
 function displayImperialTemp(event) {
   event.preventDefault();
-  alert("i work");
   let tempElement = document.querySelector("#temperature");
-  let imperialTemp = (14 * 9) /5 + 32;
+  let imperialTemp = (tempElement.innerHTML * 9) /5 + 32;
   tempElement.innerHTML = Math.round(imperialTemp);
 }
 
