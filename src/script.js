@@ -37,7 +37,9 @@ function search(event) {
   function showTemp(response) {
     console.log(response);
 
-    let temp = Math.round(response.data.main.temp);
+    metricTemp = response.data.main.temp;
+
+    let temp = Math.round(metricTemp);
     let tempElement = document.querySelector("#temperature");
     tempElement.innerHTML = `${temp}`;
 
@@ -65,16 +67,28 @@ function search(event) {
   
   axios.get(apiUrl).then(showTemp);
 }
+
+
+
 function displayImperialTemp(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
-  let imperialTemp = (tempElement.innerHTML * 9) /5 + 32;
+  let imperialTemp = (metricTemp * 9) /5 + 32;
   tempElement.innerHTML = Math.round(imperialTemp);
 }
+let metricTemp = null;
 
+function displayMectricTemp(event){
+  event.preventDefault();
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = Math.round(metricTemp);
+}
 
 let form = document.querySelector("form");
 form.addEventListener("submit", search);
 
 let imperialLink = document.querySelector("#imperial");
 imperialLink.addEventListener("click",displayImperialTemp);
+
+let metricLink = document.querySelector("#metric");
+metricLink.addEventListener("click",displayMectricTemp);

@@ -30,7 +30,7 @@ a{
   margin:30px auto;
 }
 .weather-app {
-padding: 20px;
+padding: 20px auto;
 border-radius: 5px;
 border: 1px solid #dadde1;
 }
